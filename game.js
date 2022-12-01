@@ -1,4 +1,4 @@
-alert("Welcome to the JavaScript Rock, Paper and Scissors game by Felipe B. M.!");
+alert("Welcome to the JavaScript Rock, Paper and Scissors game by Felipe B. M.! Use Ctrl+Shift+I to access the developer tools to read console messages");
 alert("You have to beat the AI in a best of 5 to be the winner.")
 alert("You can click 'cancel' at any time to exit the game and then reload the website to start over.")
 
