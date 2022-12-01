@@ -1,0 +1,6 @@
+create the game function X
+give instructions to the user X
+ask for the player prompt X
+compare player and ai's choice
+add to player's score if won, play again if lost.
+repeat 5 rounds and declare winner after done.
