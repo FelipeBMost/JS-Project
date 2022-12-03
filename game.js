@@ -25,7 +25,7 @@ let computerPlay = () => {
 }
 
 let playerSelectionPrompt = () => {
-    playerSelection = prompt("Choose 'rock', 'paper' or 'scissors'");
+    playerSelection = prompt("Choose 'rock'(1), 'paper'(2) or 'scissors'(3)");
     if (playerSelection !== null) {
         playerSelection = playerSelection.toLowerCase().trim();
         if (playerSelection == 'rock' || playerSelection == '1' || playerSelection == 'paper' || playerSelection == '2' || playerSelection == 'scissors' || playerSelection == '3' ) {
@@ -42,6 +42,7 @@ let playRound = (score) => {
     computerSelection = computerPlay();
     switch (playerSelection) {
         case 'rock':
+        case '1':
         switch (computerSelection) {
             case 'Rock':
                 console.log(`Round ${score.rounds + 1}: You played Rock. Computer played Rock. It was a draw.`);
@@ -59,6 +60,7 @@ let playRound = (score) => {
         break;
 
         case 'paper':
+        case '2':
             switch (computerSelection) {
                 case 'Rock':
                     console.log(`Round ${score.rounds + 1}: You played Paper. Computer played Rock. It was a win.`);
@@ -76,6 +78,7 @@ let playRound = (score) => {
         break;
 
         case 'scissors':
+        case '3':
             switch (computerSelection) {
                 case 'Rock':
                     console.log(`Round ${score.rounds + 1}: You played Scissors. Computer played Rock. It was a loss.`);
