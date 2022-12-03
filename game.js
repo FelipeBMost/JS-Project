@@ -43,20 +43,20 @@ let playRound = (score) => {
     switch (playerSelection) {
         case 'rock':
         case '1':
-        switch (computerSelection) {
-            case 'Rock':
-                console.log(`Round ${score.rounds + 1}: You played Rock. Computer played Rock. It was a draw.`);
-                score.draws += 1;
-            break;
-            case 'Paper':
-                console.log(`Round ${score.rounds + 1}: You played Rock. Computer played Paper. It was a loss.`);
-                score.losses += 1;
-            break;
-            case 'Scissors':
-                console.log(`Round ${score.rounds + 1}: You played Rock. Computer played Scissors. It was a win.`);
-                score.wins += 1;
-            break;
-        } 
+            switch (computerSelection) {
+                case 'Rock':
+                    console.log(`Round ${score.rounds + 1}: You played Rock. Computer played Rock. It was a draw.`);
+                    score.draws += 1;
+                break;
+                case 'Paper':
+                    console.log(`Round ${score.rounds + 1}: You played Rock. Computer played Paper. It was a loss.`);
+                    score.losses += 1;
+                break;
+                case 'Scissors':
+                    console.log(`Round ${score.rounds + 1}: You played Rock. Computer played Scissors. It was a win.`);
+                    score.wins += 1;
+                break;
+            } 
         break;
 
         case 'paper':
