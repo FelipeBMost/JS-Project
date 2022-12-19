@@ -1,7 +1,7 @@
 alert("Welcome to the JavaScript Rock, Paper and Scissors game by Felipe B. M.!");
 alert("You have to beat the AI in a best of 5 to be the winner.")
 alert("You can click 'cancel' at any time to exit the game and then reload the website to start over.")
-
+alert("Write 'game()' without quotations marks in the console to start the game")
 
 let score = {
     wins : 0, 
@@ -128,5 +128,4 @@ const game = () => {
         }   
     }
 }
-console.log(game())
 
