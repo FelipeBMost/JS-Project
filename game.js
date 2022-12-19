@@ -128,6 +128,5 @@ const game = () => {
         }   
     }
 }
-
-game();
+console.log(game())
 
